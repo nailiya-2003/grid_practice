@@ -11,6 +11,9 @@
     grid-template-rows:  [row1-s] 200px [row2-s] 200px [row3-s] 200px [row4-s];
     grid-auto-rows: minmax(100px auto);
     gap: 10px;
+    place-content: center center;
+    /* place-items: center center; */
+    height: 700px;
 }
 
 .grid-elem {
@@ -24,7 +27,8 @@
 }
 
 #first {
-    grid-column: col1-s/col3-s;
+    grid-column: col1-s/col3-s;  
+    /* place-self: start center; */
 }
 #second {
     grid-row: row3-s;
